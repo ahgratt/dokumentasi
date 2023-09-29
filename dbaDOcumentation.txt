@@ -1,0 +1,34 @@
+SELECT agama, COUNT(agama) AS jumlah FROM mahasiswa GROUP BY agama ORDER BY jumlah;
+SELECT nama, tanggal_lahir, YEAR(tanggal_lahir), MONTH(tanggal_lahir), DAY(tanggal_lahir) FROM mahasiswa;
+CONCAT_WS(' / ',
+    DAY(tanggal_lahir),
+    MONTH(tanggal_lahir),
+    YEAR(tanggal_lahir)
+) AS tanggallahir /*26 / 9 / 1991*/
+/* 
+ADD KEY untuk memasukan data dalam table,
+SELECT untuk mengambil value dalam table,
+COUNT untuk menghitung data value yang ada,
+AS untuk header menghitung data value,
+FROM untuk mengambil value(table),
+GROUP BY untuk mengelompokan value,
+ORDER BY untuk mensortir value (asc dari yang terlecil)/(dsc dari yang terbesar),
+YEAR untuk mengelompokan value tahun,
+MONTH untuk mengelompokan value bulan,
+DAY untuk mengelompokan value tanggal, 
+CONCAT untuk menggabungkan value menghasilkan nilai varchart atau string atau text*/
+CONCAT(
+    DAY(tanggal_lahir),
+    ' / ',
+    MONTH(tanggal_lahir),
+    ' / ',
+    YEAR(tanggal_lahir)
+) AS tanggallahir /* 26 / 9 / 1991 */
+/*
+CONCAT_WS memiliki funsi yang sama seperti CONCAT tapi dengan cara yang berbeda */
+CONCAT_WS(' / ',
+    DAY(tanggal_lahir),
+    MONTH(tanggal_lahir),
+    YEAR(tanggal_lahir)
+) AS tanggallahir /* 26 / 9 / 1991 */
+
