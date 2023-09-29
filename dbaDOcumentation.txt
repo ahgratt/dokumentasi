@@ -1,10 +1,5 @@
 SELECT agama, COUNT(agama) AS jumlah FROM mahasiswa GROUP BY agama ORDER BY jumlah;
 SELECT nama, tanggal_lahir, YEAR(tanggal_lahir), MONTH(tanggal_lahir), DAY(tanggal_lahir) FROM mahasiswa;
-CONCAT_WS(' / ',
-    DAY(tanggal_lahir),
-    MONTH(tanggal_lahir),
-    YEAR(tanggal_lahir)
-) AS tanggallahir /*26 / 9 / 1991*/
 /* 
 ADD KEY untuk memasukan data dalam table,
 SELECT untuk mengambil value dalam table,
