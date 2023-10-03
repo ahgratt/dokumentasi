@@ -27,7 +27,7 @@ CONCAT_WS(' / ',
     YEAR(tanggal_lahir)
 ) AS tanggallahir /* 26 / 9 / 1991 */
 /*
-CREATE  untuk mnambah database, table, atau data yang lain.
+CREATE  untuk menambah database, table, atau data yang lain.
 CREATE VIEW untuk menambah view pada database,
 LEFT untuk mengambil value dari arah kiri contoh LEFT(value_database,value),
 */
