@@ -28,8 +28,14 @@ CONCAT_WS(' / ',
 ) AS tanggallahir /* 26 / 9 / 1991 */
 /*
 CREATE  untuk mnambah database, table, atau data yang lain.
-CREATE VIEW untuk mnambah database, table, atau data yang lain. Yang disimpan pada table view,
+CREATE VIEW untuk menambah view pada database,
 LEFT untuk mengambil value dari arah kiri contoh LEFT(value_database,value),
 */
 SELECT mahasiswa.*, agama. inggris FROM mahasiswa LEFT JOIN agama ON mahasiswa.agama = agama.indonesia WHERE agama.indonesia IS null ORDER BY id;
 // berfungsi untuk menampilkan data value yang tidak cocok dengan database.
+/*
+INNER JOIN utuk menggabungkan database atau value lain,
+ON untuk menentukan dimana akan dituju
+contoh :
+*/
+SELECT mahasiswa_view.nama, mahasiswa_view.provinsi, mahasiswa_view.kabupaten, adm.provinsi.provinsi, adm.kabupaten.kabupaten FROM mahasiswa_view INNER JOIN adm.provinsi ON mahasiswa_view.provinsi = adm.provinsi.provinsi_id INNER JOIN adm.kabupaten ON mahasiswa_view.kabupaten = adm.kabupaten.kabupaten_id;
