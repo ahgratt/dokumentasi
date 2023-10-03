@@ -4,10 +4,10 @@ SELECT nama, tanggal_lahir, YEAR(tanggal_lahir), MONTH(tanggal_lahir), DAY(tangg
 ADD KEY untuk memasukan data dalam table,
 SELECT untuk mengambil value dalam table,
 COUNT untuk menghitung data value yang ada,
-AS untuk header menghitung data value,
+AS untuk penamaan header data value,
 FROM untuk mengambil value(table),
 GROUP BY untuk mengelompokan value,
-ORDER BY untuk mensortir value (asc dari yang terlecil)/(dsc dari yang terbesar),
+ORDER BY untuk menunjuk value dan mensortir value (asc dari yang terlecil)/(dsc dari yang terbesar),
 YEAR untuk mengelompokan value tahun,
 MONTH untuk mengelompokan value bulan,
 DAY untuk mengelompokan value tanggal, 
@@ -26,4 +26,10 @@ CONCAT_WS(' / ',
     MONTH(tanggal_lahir),
     YEAR(tanggal_lahir)
 ) AS tanggallahir /* 26 / 9 / 1991 */
-
+/*
+CREATE  untuk mnambah database, table, atau data yang lain.
+CREATE VIEW untuk mnambah database, table, atau data yang lain. Yang disimpan pada table view,
+LEFT untuk mengambil value dari arah kiri contoh LEFT(value_database,value),
+*/
+SELECT mahasiswa.*, agama. inggris FROM mahasiswa LEFT JOIN agama ON mahasiswa.agama = agama.indonesia WHERE agama.indonesia IS null ORDER BY id;
+// berfungsi untuk menampilkan data value yang tidak cocok dengan database.
