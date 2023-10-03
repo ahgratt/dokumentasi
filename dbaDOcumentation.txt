@@ -35,7 +35,9 @@ SELECT mahasiswa.*, agama. inggris FROM mahasiswa LEFT JOIN agama ON mahasiswa.a
 // berfungsi untuk menampilkan data value yang tidak cocok dengan database.
 /*
 INNER JOIN utuk menggabungkan database atau value lain,
-ON untuk menentukan dimana akan dituju
+ON untuk menentukan dimana akan dituju,
+WHERE untuk menentukan dimana value itu berada,
+LIKE untuk mencari pola yang ditentukan pada kolom / field,
 contoh :
 */
 SELECT mahasiswa_view.nama, mahasiswa_view.provinsi, mahasiswa_view.kabupaten, adm.provinsi.provinsi, adm.kabupaten.kabupaten FROM mahasiswa_view INNER JOIN adm.provinsi ON mahasiswa_view.provinsi = adm.provinsi.provinsi_id INNER JOIN adm.kabupaten ON mahasiswa_view.kabupaten = adm.kabupaten.kabupaten_id;
