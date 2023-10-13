@@ -1,0 +1,58 @@
+OS (operating system) merupakan program yang mengatur eksekusi program dan bertindak sebagai interface antara aplikasi dan perangkat keras.
+tujuan :
+  1. kemudahan
+  2. efisiensi
+  3. kemampuan untuk berkembang
+OS sebagai inrerface antara user dan perangkat keras berarti menyediakan mekanisme kepada end user untuk menggunakan utilitas yang disediakan.
+End user tidak mau tau akan detail proses yang melibatkan computer hardeware, sehingga end user hanya berinteraksi via aplikasi-aplikasi yang disediakan.
+  
+komponen komponen sistem operasi :
+  1. management proses
+    proses adalah sebuah program sedang di eksukusi
+    proses membutuhkan beberapa sumber daya berupa cpu time, memorim, berkas berkas, dan perangkat perangkat I/O
+    untuk menyelesaikan tugasnya.
+    tanggung jawab sistem operasi atas aktivitas manageman proses :
+      1. pembuatan dan pnghapusan proses pengguna dan sistem proses
+      2. menunda atau mrlanjutkan proses
+      3. menyediakan mekanisme untuk proses singkronisasi
+      4. menyediakan mekasisme untuk komunikasi
+      5. menyediakan mekanisme untunk penanganan deadlock
+  2. managemen memori utama
+    memori utama adlah sebuah array yang besar terdiri dari word atau byte, yang ukurannya mecapai ratusan, ribuan, atau, bahkan jutaan.
+    memori utama berginsi sebagai tempat pennyimpanan yang akses datanya digunakan oleh cpu atau perangkat I/O.
+    memori utama termasuk tempat penyimpanan data yang sementara(volatile), artinya data dapat hilang begitu sistem dimatikan.
+    tanggung jawab sistem operasi atas aktivitas menagemen memori :
+      1. manjaga track memori yang sedang digunakan dan siapa yang menggunakannya.
+      2. memilih program yang akan di-load ke memori
+      3. mengalokasikan dan meng-dealokasikan ruang memomri sesuai kebutuhan.
+   3. managemen Secondary-Storage
+    data yang disimpan dalam memori utama bersifat smentara dan jumlahnya sangat kecil.
+   4. managemen Sistem I/O
+    sering disebut device manager
+        -menyediakan "divice driver" yang umum
+        -menyediakan driver untuk dapat melakukan operasi "rinci" untuk menyediakan oerangkat keras i/o
+   5. managemen berkas
+    berkas adalah kumpulan informasi yang berhubungan ssesuai dengan tujuan pembuat berkas tersebut.
+    berkas dapat mempunyai struktur yang bersifat hirarkis.
+        
+pelayanan sistem operasi :
+  eksekusi program.
+  operasi input dan out output.
+  memanipulasi sistem berkas.
+  Komunikasi.
+  Deteksi error.
+pelayanan tambahan :
+  alokasi sumber daya.
+  accounting.
+  proteksi.
+
+pengembangan sistem operasi :
+  generasi pertama (1945-1955)
+  generasi kedua (1955-1965)
+    -memperkanlkan batch processing system.
+  generasi ketiga (1965-1980)
+    -multi user
+    -multi programing
+  generasi keempat (pasca 1980an)
+    -Graphical user interface
+
