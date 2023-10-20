@@ -56,3 +56,17 @@ pengembangan sistem operasi :
   generasi keempat (pasca 1980an)
     -Graphical user interface
 
+komponen sistem umum
+# manahemen proses
+  proses adalah sebuah program yang sedang dijalankan(eksekusi).
+  -suatu proses memerlukan resources pada saar eksekusi : cpu time, memory, files dan i/o devices
+  sistem operasi bertanggung jawab terjadap aktifitas dengan manajemen proses :
+  -process creation & deleteion
+  -process suspension (block) & resumption.
+  -mekanisme :
+    -singkronisasi antar proses
+    -komunikasi antar proses
+laye
+  
+
+
