@@ -66,7 +66,81 @@ komponen sistem umum
   -mekanisme :
     -singkronisasi antar proses
     -komunikasi antar proses
-laye
+
+# ciphertesk 
+  adalah tesk yang sudah disandikan sehinnga tidak bermakna lagi. nama lain dari cipherteks adalah kriptogram(cryptogram)
+# plaintesk
+  adalah tesk yang terlihat jelas saat dibaca
+# enkripsi 
+  proses penyandian plaintesk menjadi ciphertesk
+# deskripsi 
+  mengambalikan ciphertesk menjadi plaintesk 
+
+notasi matematis
+misalkan 
+  C = chipertesk
+  P = plaintesk
+fungsi enkripsi E memetakan P ke C 
+E(P) = C
+fungsi deskripsi D memetakan C ke P
+D(C) = P
+fungsi enkripsi dan deskripsi harus memenuhi sifat :
+D(E(P)) = P
+
+# aplikasi enkripsi - deskripsi
+1. pengiriman data melalui saluran komunikasi (data encryption on motion)
+2. penyimpanan data di dalam disk storage (data encryption at rest)
+
+# cryptography berasal dari Yunani Cripto yang artinya hidden atau secret dan graphy adalah writing.
+kriptografi adalah ilmu dan seni untuk menjaga keamanan pesan [Schneier, 1996].
+algoritma kriptografi
+1. aturan untuk enciphering dan dechipering atau
+2. fungsi matematika yang digunakan untuk enkripsi dan deskripsi pesan
+chiper tidak sama dengan code. code memiliki sejarah tersendiri dalam kriptografi
+
+# encoding 
+  transgirmasi dari plantask menjadi kode
+# decoding
+  transformasi kode kedalam plantask
+# codebook
+  dokumen yang diguakan untuk mengimplementasikan suatu kode. codebook terdiri dari tabel lookup untuk decoding dan encoding.
+
+system kriptografi
+1. algoritma
+2. plaintesk
+3. ciphertesk
+4. kunci
+
+# penyadapan (eavesdropper) adalah orang yang mencoba menangkap pesan selama ditranmisikan.
+# kriptanalisis 
+  ilmu seni untuk memecamkan chipertesk menjadi plaintesk tanpa mengetahui kunci yang digunakan,
+  pelaku disebut kriptanalis.
+# kriptologi
+  studi mengenai kriptologi dan kriptanalis.
+keduanya memiliki kesamaan yaitu menerjemahkan ciphtertesk menjadi plaintesk.
+alat yang digunakan bangsa yunani dalam kriptografi ialah scytale.
+
+empat kelompok yang menggunakan kriptografi
+1. militer
+2. korp diplomatik
+3. diaris
+4. lovers
+
+layanan yang disediakan kriptografi
+1. kerahasiaan (confidentiality)
+2. integrasi data (data integrity)
+3. otentikasi (authentication)
+4. nirpenyangkalan (non-repudiation)
+
+macam macam algoritma dalam kriptografi
+1. kriptografi simetris
+2. kriptografi kunci public
+3. kriptografi kunci simentri
+
+serangan terhadap typografi
+1. serangan pasif
+  metode penyadapan
+  a. wiretapping
+  b. acoustic eavesdropping
+2. serangan aktif
   
-
-
