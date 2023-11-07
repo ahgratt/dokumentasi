@@ -41,3 +41,91 @@ LIKE untuk mencari pola yang ditentukan pada kolom / field,
 contoh :
 */
 SELECT mahasiswa_view.nama, mahasiswa_view.provinsi, mahasiswa_view.kabupaten, adm.provinsi.provinsi, adm.kabupaten.kabupaten FROM mahasiswa_view INNER JOIN adm.provinsi ON mahasiswa_view.provinsi = adm.provinsi.provinsi_id INNER JOIN adm.kabupaten ON mahasiswa_view.kabupaten = adm.kabupaten.kabupaten_id;
+
+contoh function perkalian dalam sql :
+    DELIMITER $$
+    CREATE FUNCTION perkalian(angka_1 INT, angka_2 INT) RETURNS INT
+    BEGIN 
+    	DECLARE x INT;
+        SET x = angka_1 * angka_2;
+        RETURN x;
+    END;
+contoh function menghitung umur :
+    DELIMITER $$
+    CREATE FUNCTION umur(tanggal_1 date, tanggal_2 date) RETURNS int
+    BEGIN 
+    	DECLARE x int;
+        set x = YEAR(tanggal_2) - YEAR(tanggal_1); // dengan tahun
+        set x = (tanggal_2 - tanggal_1)/365; //dengan hitungan hari tapi tetap dibaca tahun dan lebih akurat
+        RETURN x;
+    END;
+contoh pemanggilan function menghitung umur :
+    DELIMITER $$
+    CREATE FUNCTION huruf (nilai INT) RETURNS VARCHAR(5)
+    BEGIN
+    DECLARE x VARCHAR(5);
+    	IF nilai > 80 THEN
+    		SET x = 'A';
+    	ELSEIF nilai > 70 THEN
+    		SET x = 'B';
+    	ELSEIF nilai > 60 THEN
+    		SET x = 'C';
+    	ELSEIF nilai > 50 THEN
+    		SET x = 'D';
+    	ELSE
+    		SET x = 'E';
+    	END IF;
+    	
+    	RETURN x;
+    END
+
+    SELECT nama, tanggal_lahir, umur(tanggal_lahir, now()) as usia from databaseName;
+pastikan database tersebut sudah ada tabel tanggal lahir yang memuat data tentang tanggal lahir.
+contoh function menghitung nilai huruf:
+DELIMITER $$
+CREATE FUNCTION huruf (nilai INT) RETURNS VARCHAR(5)
+BEGIN
+DECLARE x VARCHAR(5);
+	IF nilai > 80 THEN
+		SET x = 'A';
+	ELSEIF nilai > 70 THEN
+		SET x = 'B';
+	ELSEIF nilai > 60 THEN
+		SET x = 'C';
+	ELSEIF nilai > 50 THEN
+		SET x = 'D';
+	ELSE
+		SET x = 'E';
+	END IF;
+	
+	RETURN x;
+END
+mencari nilai angka dengan rendom :
+DELIMITER $$
+CREATE FUNCTION huruf (nilai varchar(1)) RETURNS VARCHAR(5)
+BEGIN
+    DECLARE x VARCHAR(5);
+    IF nilai = 'A' THEN
+    SET x = 'beetwen 81 and 100';
+    ELSEIF nilai =' B' THEN
+    SET x = 'beetwen 71 and 80';
+    ELSEIF nilai = 'C' THEN
+    SET x = 'beetwen 61 and 70';
+    ELSEIF nilai = 'D' THEN
+    SET x = 'beetwen 51 and 60';
+    ELSEIF nilai = 'E' THEN
+    set x = 'beetwen 0 and 50';
+    else 
+    set x = 'tidak ada nilai';
+END IF;
+RETURN x;
+END
+contoh function provinsi dalam database:
+DELIMITER $$
+CREATE FUNCTION provinsi(kode VARCHAR(20)) RETURNS VARCHAR(50)
+BEGIN 
+    DECLARE x VARCHAR(50);
+    SELECT provinsi INTO x FROM adm.provinsi WHERE provinsi_id= LEFT(kode,2);
+    RETURN x;
+END
+catatan : harus memiliki database provinsi 
