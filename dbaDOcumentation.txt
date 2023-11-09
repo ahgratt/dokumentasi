@@ -129,3 +129,15 @@ BEGIN
     RETURN x;
 END
 catatan : harus memiliki database provinsi 
+contoh pembuatan procedur edit pada sql :
+	DELIMITER $$
+	CREATE PROCEDURE data_edit1(id1 INT, kolom VARCHAR(100), nilai VARCHAR(100))
+	BEGIN	
+		IF kolom = 'nama' THEN
+	    		UPDATE mahasiswa SET nama = nilai WHERE id = id1;
+	   	ELSEIF kolom = 'alamat' THEN
+	    		UPDATE mahasiswa SET alamat = nilai WHERE id = id1;
+	    	END IF;
+	END $$
+cara pemanggilan procedur edit pada sql
+	call data_edit(1,'alamat','pontianak');
