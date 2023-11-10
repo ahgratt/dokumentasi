@@ -75,6 +75,8 @@ komponen sistem umum
   proses penyandian plaintesk menjadi ciphertesk
 # deskripsi 
   mengambalikan ciphertesk menjadi plaintesk 
+# kunci
+  suatu bilangan yang dirahaisakan yang digunakan salam proses enkripsi dan deskripsi
 
 notasi matematis
 misalkan 
@@ -107,10 +109,41 @@ chiper tidak sama dengan code. code memiliki sejarah tersendiri dalam kriptograf
 
 system kriptografi
 1. algoritma
+  suatu algoritma dikatakan aman, 
+a. bila tidak ada cara untuk menemukan plainteksnya, berapapun banyaknya shipertext yang dimilikinya.
+b. bila waktu yang diperlukan untuk menjebol algoritma lebih lama dari pada waktu yang diperlukan oleh informasi tersebut tetap aman
+
 2. plaintesk
 3. ciphertesk
-4. kunci
-
+  a.ciphertesk substitusi
+    1.monoalfabet 
+    2.polyalfabet
+    3.monograf/unilateral
+    4.polygraf/multilateral
+    cipher subtitusi - ceaser cipher :
+    * tiap alfabet digeser 3 huruf ke kanan
+    * dalam prakteknya ciphertesk dikelompokan kedalam kelompok n-huruf, misal kelompok 4-huruf
+    * atau membuang semua spasi
+    * bertujuan agar kriptanalis menjadi lebih sulit
+    cipher subtitusi - vigenere cipher :
+    * termasuk ke dalam chiper abjad-majemuk
+    * vigenere cipher menggunakan bujur sangkar
+    * jika panjang kunci lebih pendek dari pada plaintesk maka kunci diulang secara periodik
+    * pada dasarnya, setiap enkripsi adalah ceaser cipher dengan kunci yang berbeda beda.
+    contoh
+    plaintesk : THIS PLAINTESK
+    kunci : sony sonysonys
+    ciphertesk : LVVQ HZNGFHRVL
+      c('huruf awal') = ('huruf awal' + 'kunci awal') mod 26 
+      c('T') = ('T' + 's') mod 26 = L
+      T = 20 dan s = 19 -> (20 + 19 ) % 26 = 13 -> L
+      DST
+    plaintesk : POLITEKNIK LP3I DEPOK
+    kunci     : INFORMATIK AI N FORMA
+    ciphertesk: XBQWKQKHQU LX V ISGAK
+  b.ciphertesk transposisi
+    ciperteks diperoleh dengan mengubah posisi huruf dalam plaintesknya
+4. kuncI
 # penyadapan (eavesdropper) adalah orang yang mencoba menangkap pesan selama ditranmisikan.
 # kriptanalisis 
   ilmu seni untuk memecamkan chipertesk menjadi plaintesk tanpa mengetahui kunci yang digunakan,
@@ -119,6 +152,7 @@ system kriptografi
   studi mengenai kriptologi dan kriptanalis.
 keduanya memiliki kesamaan yaitu menerjemahkan ciphtertesk menjadi plaintesk.
 alat yang digunakan bangsa yunani dalam kriptografi ialah scytale.
+tugas utama kriptografu adalah untuk menjaga plaintext agar tidak diketahui orang lain.
 
 empat kelompok yang menggunakan kriptografi
 1. militer
@@ -143,4 +177,4 @@ serangan terhadap typografi
   a. wiretapping
   b. acoustic eavesdropping
 2. serangan aktif
-  
+
