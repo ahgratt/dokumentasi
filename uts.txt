@@ -47,3 +47,6 @@ Anda akan menggunakan "Flashdata" ketika:
 Anda ingin memberi tahu pengguna tentang suatu hal yang telah terjadi (misalnya, sukses dalam melakukan pendaftaran), tetapi Anda tidak ingin pesan tersebut ditampilkan kembali jika pengguna mengirimkan formulir yang sama.
 
 Anda ingin menggunakan data yang dihasilkan oleh proses server yang diperlukan untuk melakukan hal-hal yang tidak bisa dihilangkan dalam proses pengiriman formulir, tetapi Anda tidak ingin data tersebut menjadi sampah di basis data atau pada beberapa proses pengiriman formulir berikutnya.
+
+Bagaimana Anda mengarahkan pengguna ke halaman lain setelah mereka mengirimkan
+data form dalam CodeIgniter?
