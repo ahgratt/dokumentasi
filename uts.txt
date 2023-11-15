@@ -179,3 +179,36 @@ Pada konteks aplikasi web, lookup mungkin melibatkan banyak jenis operasi sepert
 
 Jelaskan tahap pembuatan formulir untuk menginput data ke dalam tabel dengan
 menggunakan lookup dari tabel lain.
+
+
+Tahap awal pembuatan formulir untuk menginput data ke dalam tabel dengan menggunakan lookup dari tabel lain adalah dengan mendefinisikan formulir HTML yang akan berisi inputan pengguna. Contoh formulir HTML sederhana mungkin seperti berikut:
+<form action="/submit" method="post">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama">
+    
+    <label for="id_kota">Kota:</label>
+    <select id="id_kota" name="id_kota">
+        <!-- Opsi lookup akan diisikan di sini -->
+    </select>
+    
+    <input type="submit" value="Submit">
+</form>
+
+Selanjutnya, dalam tahap ini kita perlu melakukan lookup data dari tabel lain. Contoh query lookup yang dapat digunakan dalam CodeIgniter mungkin seperti berikut:
+public function getKotaOptions()
+{
+    $options = [];
+
+    $results = $this->db->query('SELECT id, nama FROM kota')->getResult();
+
+    foreach ($results as $row) {
+        $options[$row->id] = $row->nama;
+    }
+
+    return $options;
+}
+Setelah lookup data selesai dilakukan, kita perlu menambahkan opsi lookup ke dalam elemen <select> yang ada di dalam formulir HTML. Untuk melakukan hal ini, kita dapat menggunakan teknik AJAX atau menggunakan hasil lookup langsung di controller yang menangani formulir. Contoh cara menggunakan hasil lookup langsung di controller mungkin seperti berikut:
+public function index()
+{
+    $kotaModel = new KotaModel();
+   
