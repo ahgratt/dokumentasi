@@ -1,0 +1,9 @@
+Bagaimana Anda menampilkan pesan kesalahan validasi kepada pengguna setelah mengirimkan form?
+$this->form_validation->set_rules('nama', 'Nama', 'required|min_length[3]');
+$this->form_validation->set_rules('email', 'Email' 'required|valid_email');
+
+if ($this->form_validation->run() === FALSE) {
+    // Tampilkan pesan kesalahan
+} else {
+    // Lanjutkan dengan pemrosesan data
+}
