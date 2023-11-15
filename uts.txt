@@ -38,4 +38,5 @@ class FormInputCest
     }
 }
 
+Apa yang dimaksud dengan "Flashdata" dalam CodeIgniter, dan kapan Anda akan menggunakannya?
 
