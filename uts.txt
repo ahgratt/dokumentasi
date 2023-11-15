@@ -57,3 +57,6 @@ public function form_submit()
     // Setelah berhasil, redirect ke halaman lain
     return redirect()->to('/halaman-tujuan');
 }
+
+Jelaskan peran Model dalam arsitektur MVC (Model-View-Controller) CodeIgniter dalam
+konteks pengolahan data form.
