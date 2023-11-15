@@ -176,3 +176,6 @@ Melakukan proses lookup untuk mengambil informasi yang diperlukan. Informasi ini
 Mengirimkan informasi yang diambil ke pengguna atau bagian lain dari aplikasi yang meminta lookup.
 
 Pada konteks aplikasi web, lookup mungkin melibatkan banyak jenis operasi seperti SELECT, JOIN, atau GROUP BY dalam SQL.
+
+Jelaskan tahap pembuatan formulir untuk menginput data ke dalam tabel dengan
+menggunakan lookup dari tabel lain.
