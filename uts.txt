@@ -7,3 +7,12 @@ if ($this->form_validation->run() === FALSE) {
 } else {
     // Lanjutkan dengan pemrosesan data
 }
+Pesan kesalahan validasi biasanya ditampilkan secara real-time atau langsung setelah pengguna mengirimkan form. Untuk melakukan ini, kita bisa menggunakan atribut set_message dari kelas Form_validation. Contoh penggunaan atribut set_message adalah sebagai berikut:
+$this->form_validation->set_rules('username', 'Username', 'required|min_length[5]');
+$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+
+// Menetapkan pesan kesalahan untuk setiap aturan yang gagal divalidasi
+$this->form_validation->set_message('required', '{field} harus diisi.');
+$this->form_validation->set_message('min_length', '{field} minimal {param} karakter.');
+$this->form_validation->set_message('valid_email', 'Alamat email yang dimasukkan tidak valid.');
+Jika pengguna mengirimkan form dengan data yang tidak lolos validasi, pesan kesalahan yang telah ditetapkan akan ditampilkan. Anda dapat menyesuaikan isi pesan kesalahan sesuai dengan kebutuhan aplikasi atau sistem Anda.
