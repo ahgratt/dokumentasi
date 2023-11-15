@@ -50,3 +50,10 @@ Anda ingin menggunakan data yang dihasilkan oleh proses server yang diperlukan u
 
 Bagaimana Anda mengarahkan pengguna ke halaman lain setelah mereka mengirimkan
 data form dalam CodeIgniter?
+public function form_submit()
+{
+    // Lakukan validasi dan penyimpanan data ke database disini
+
+    // Setelah berhasil, redirect ke halaman lain
+    return redirect()->to('/halaman-tujuan');
+}
