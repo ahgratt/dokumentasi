@@ -25,4 +25,17 @@ $I->fillField('Email' 'john@example.com');
 $I->click('Submit);
 $I->see('Data telah berhasil disimpan.')
 
+<?php
+class FormInputCest
+{
+    public function checkFormInput(AcceptanceTester $I)
+    {
+        $I->amOnPage('/form_input');
+        $I->fillField('Nama', 'John Doe');
+        $I->fillField('Email', 'john@example.com');
+        $I->click('Submit');
+        $I->see('Data telah berhasil disimpan.');
+    }
+}
+
 
