@@ -164,3 +164,15 @@ Validasi data yang dikirimkan melalui form (misalnya, mengisi bidang yang harus 
 Menyimpan data user yang valid ke dalam basis data.
 
 Untuk melakukan hal-hal ini, kita dapat menggunakan model yang terpisah dari controller. Controller bertugas mengatur alur aplikasi, sedangkan model bertugas mengurus data.
+
+Lookup dalam konteks aplikasi web merujuk pada proses pencarian dan pengambilan informasi yang diperlukan untuk memproses sebuah permintaan. Proses lookup biasanya mengambil informasi dari basis data, cache, atau sumber data lainnya yang dianggap perlu untuk melakukan lookup.
+
+Lookup umumnya melibatkan proses berikut:
+
+Menerima permintaan lookup dari pengguna atau bagian lain dari aplikasi.
+
+Melakukan proses lookup untuk mengambil informasi yang diperlukan. Informasi ini mungkin berupa data tunggal, data yang berelasi, atau hasil pengolahan yang kompleks.
+
+Mengirimkan informasi yang diambil ke pengguna atau bagian lain dari aplikasi yang meminta lookup.
+
+Pada konteks aplikasi web, lookup mungkin melibatkan banyak jenis operasi seperti SELECT, JOIN, atau GROUP BY dalam SQL.
