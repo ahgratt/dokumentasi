@@ -1,9 +1,69 @@
 18.	Bagaimana Anda mengimplementasikan logika pencarian dan pilihan &quot;lookup&quot; dalam CodeIgniter?
 Jawaban :
+Dalam CodeIgniter, Anda dapat mengimplementasikan logika pencarian dan pilihan "lookup" melalui model yang mengakses basis data. Berikut adalah contoh bagaimana cara melakukannya:
+
+Pertama, Anda perlu membuat model yang akan menangani logika pencarian dan pilihan "lookup". Misalnya, jika Anda ingin mengimplementasikan lookup untuk nama kota, Anda dapat membuat model KotaModel yang terhubung dengan tabel kota di basis data Anda.
+
+Selanjutnya, Anda perlu menambahkan metode ke dalam model KotaModel yang akan melakukan lookup data. Misalnya, Anda dapat menambahkan metode getKotaOptions() ke dalam model KotaModel yang mengambil semua nama kota dari tabel kota dan mengembalikannya dalam bentuk array asosiatif:
+public function getKotaOptions()
+{
+    $options = [];
+
+    $results = $this->db->query('SELECT id, nama FROM kota')->getResult();
+
+    foreach ($results as $row) {
+        $options[$row->id] = $row->nama;
+    }
+
+    return $options;
+}
+Setelah itu, Anda perlu memanggil metode getKotaOptions() dari dalam controller yang menangani formulir dan menambahkan hasilnya ke dalam elemen <select> yang ada di dalam formulir HTML. Contoh cara melakukan hal ini mungkin seperti berikut:
+public function index()
+{
+    $kotaModel = new KotaModel();
+    $data['kotaOptions'] = $kotaModel->getKotaOptions();
+
+    return view('form_view', $data);
+}
+Pada file view Anda (contohnya, form_view.php), Anda perlu mengisi elemen <select> dengan opsi lookup yang telah diambil dari model. Berikut adalah contoh cara melakukan hal ini:
+<form action="/submit" method="post">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama">
+    
+    <label for="id_kota">Kota:</label>
+    <select id="id_kota" name="id_kota">
+        <?php foreach ($kotaOptions as $id => $nama): ?>
+            <option value="<?= $id ?>"><?= $nama ?></option>
+        <?php endforeach; ?>
+    </select>
+    
+    <input type="submit" value="Submit">
+</form>
 
 19.	Bagaimana tahap pembuatan formulir untuk menginput data ke dalam tabel dengan CodeIgniter?
 Jawaban :
+Pada tahap pembuatan formulir untuk menginput data ke dalam tabel dengan CodeIgniter, Anda dapat mengikuti langkah-langkah berikut:
+
+Pertama, buat file view HTML yang akan menjadi tampilan formulir. Contohnya, jika Anda ingin membuat formulir untuk menginput data pengguna, Anda dapat membuat file pengguna_form.php di dalam folder views di aplikasi Anda.
+
+Kemudian, buat elemen-elemen form yang diperlukan untuk menginput data, seperti teks, angka, tanggal, dll. Pastikan untuk menggunakan atribut name pada setiap elemen form yang akan diisi dengan data dari pengguna.
+
+Selanjutnya, di dalam file controller yang bertugas menangani formulir, Anda perlu mengimplementasikan metode yang akan mengambil data dari elemen form dan menyimpannya ke dalam tabel yang bersangkutan. Misalnya, jika Anda ingin membuat formulir untuk menginput data pengguna, Anda dapat membuat metode tambahPengguna() di dalam controller PenggunaController yang mengakses model PenggunaModel untuk menyimpan data.
+
+Akhirnya, pada file controller, Anda perlu menghubungkan file view HTML dengan metode yang menangani penginputan data. Misalnya, jika Anda ingin membuat formulir untuk menginput data pengguna, Anda dapat menambahkan kode berikut di dalam metode index() dari controller PenggunaController:
+public function index()
+{
+    return view('pengguna_form');
+}
 
 20.	Jelaskan langkah-langkah untuk memvalidasi data yang dimasukkan oleh pengguna melalui formulir.
 Jawaban :
+Untuk memvalidasi data yang dimasukkan oleh pengguna melalui formulir, Anda dapat mengikuti langkah-langkah berikut:
 
+Pertama, buat aturan validasi pada file controller yang menangani penginputan data. Aturan validasi ini biasanya berisi teks keterangan dan format data yang diperbolehkan.
+
+Kemudian, buat kode yang akan memvalidasi data yang dimasukkan oleh pengguna melalui formulir. Kode ini akan memeriksa apakah data yang dimasukkan sesuai dengan aturan validasi yang telah ditetapkan.
+
+Jika data yang dimasukkan oleh pengguna tidak sesuai dengan aturan validasi, kembalikan pengguna ke halaman formulir dengan pesan kesalahan. Pesan kesalahan ini biasanya ditampilkan di sebelah elemen form yang tidak sesuai dengan aturan validasi.
+
+Jika data yang dimasukkan oleh pengguna sesuai dengan aturan validasi, maka proses data yang dimasukkan oleh pengguna dapat dilanjutkan, seperti menyimpan data ke dalam tabel atau menjalankan proses tambahan lainnya.
