@@ -18,9 +18,12 @@ $this->form_validation->set_message('valid_email', 'Alamat email yang dimasukkan
 Jika pengguna mengirimkan form dengan data yang tidak lolos validasi, pesan kesalahan yang telah ditetapkan akan ditampilkan. Anda dapat menyesuaikan isi pesan kesalahan sesuai dengan kebutuhan aplikasi atau sistem Anda.
 Bagaimana Anda melakukan pengujian unit atau pengujian fungsional pada form input
 dalam proyek CodeIgniter?(perbaiki kode berikut)
-$I = new AcceptanceTester($scenario);
-$I-&gt;amOnPage(&#39;/form_input&#39;);
-$I-&gt;fillField(&#39;Nama&#39;, &#39;John Doe&#39;);
-$I-&gt;fillField(&#39;Email&#39; &#39;john@example.com&#39;);
-$I-&gt;click(&#39;Submit);
-$I-&gt;see(&#39;Data telah berhasil disimpan.&#39;)
+$this->form_validation->set_rules('nama', 'Nama', 'required|min_length[3]');
+$this->form_validation->set_rules('email', 'Email' 'required|valid_email');
+
+if ($this->form_validation->run() === FALSE) {
+    // Tampilkan pesan kesalahan
+} else {
+    // Lanjutkan dengan pemrosesan data
+}
+
