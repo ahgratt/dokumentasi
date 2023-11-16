@@ -29,3 +29,22 @@ SENTUHAN
 Antarmuka harus dirancang untuk responsif terhadap sentuhan, memastikan kontrol dan interaksi yang nyaman pada perangkat layar sentuh.
 INGATAN
 dalam hal ini juga memainkan peran penting dalam merancang antarmuka.Beberapa aspek yang perlu dipertimbangkan adalah memori jangka pendek, memori jangka panjang dan kemampuan pengenalan pola.
+
+2. 
+IMK adalah suatu disiplin ilmu 
+yang mengkaji komunikasi atau interaksi diantara pengguna dengan sistem komputer maupun sistem yang banyak digunakan dalam kehidupan sehari-hari, misalnya kendaraan, peralatan rumah tangga dan sebagainya.
+Latar belakang IMK melibatkan perkembangan teknologi komputer dan pertumbuhan kebutuhan pengguna. Dalam sejarahnya, perkembangan antarmuka pengguna (UI) dan antarmuka pengguna manusia (HMI) telah berkembang dari antarmuka teks ke antarmuka grafis, hingga interaksi berbasis sentuhan dan suara.
+faktor faktor diantaranya antara lain :
+a. faktor rekayasa perangkat lunak 
+b. faktor kecerdasan buatan 
+c. faktor linguistik komputasional
+d. faktor psikologi
+e. faktor multimedia 
+f. faktor antropologi 
+g. faktor ergonomik
+h. faktor penulisan 
+i. faktor matematika 
+j. faktor bisnis
+k. faktor sosiologi 
+
+3.
