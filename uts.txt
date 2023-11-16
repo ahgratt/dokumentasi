@@ -48,3 +48,18 @@ j. faktor bisnis
 k. faktor sosiologi 
 
 3.
+Piranti Input:
+Keyboard: Piranti input yang paling umum, terdiri dari sejumlah tombol huruf, angka, dan karakter khusus untuk memasukkan data teks.
+Mouse: Menggunakan pergerakan dan tombol-tombolnya, mouse digunakan untuk mengontrol kursor pada layar komputer.
+Touchpad: Biasanya ditemukan pada laptop, touchpad memungkinkan pengguna menggerakkan kursor dengan gerakan jari.
+Piranti Petunjuk:
+Monitor: Piranti utama untuk menampilkan informasi kepada pengguna dalam bentuk visual.
+Speaker: Piranti audio untuk mengeluarkan suara dan memberikan umpan balik auditif.
+Tombol dan Lampu Indikator: Tombol-tombol dan lampu indikator memberikan petunjuk terkait status dan aksi yang dapat dilakukan.
+Piranti Pengambilan Data Terformat:
+Barcode Scanner: Menggunakan sinar untuk membaca dan menginterpretasi informasi yang terdapat dalam barcode.
+Optical Character Recognition (OCR): Mengkonversi teks yang tercetak ke dalam format digital yang dapat diolah.
+Piranti Pengambilan Data Tidak Terformat:
+Mikrofon: Mengubah suara menjadi sinyal listrik untuk merekam atau memproses suara.
+Kamera: Mengambil gambar atau merekam video untuk diolah atau ditransmisikan.
+Sensor Gerak: Mendeteksi perubahan posisi atau gerakan, sering digunakan dalam perangkat seluler atau permainan video.
