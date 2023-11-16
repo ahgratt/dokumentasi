@@ -23,4 +23,8 @@ Saluran output pada manusia, antara lain :
 Dalam merancang antarmuka, faktor manusia atau panca indra memainkan peran kunci. Ini melibatkan:
 PENGLIHATAN
 Desain harus memperhitungkan kemampuan pengguna untuk melihat dengan jelas, termasuk kontras warna, ukuran teks, dan tata letak yang memfasilitasi persepsi visual.
+PENDENGARAN
+Faktor suara, seperti umpan balik audio atau petunjuk vokal, dapat meningkatkan aksesibilitas dan pengalaman pengguna.
+SENTUHAN
+
 
