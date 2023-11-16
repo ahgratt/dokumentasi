@@ -63,3 +63,6 @@ Piranti Pengambilan Data Tidak Terformat:
 Mikrofon: Mengubah suara menjadi sinyal listrik untuk merekam atau memproses suara.
 Kamera: Mengambil gambar atau merekam video untuk diolah atau ditransmisikan.
 Sensor Gerak: Mendeteksi perubahan posisi atau gerakan, sering digunakan dalam perangkat seluler atau permainan video.
+
+•	Persona: Persona merupakan suatu karakteristik yang diamati oleh orang lain atau disebut juga dengan prototypical user. Persona membantu memanusiakan pengguna dan mengenal mereka pada tingkat yang lebih pribadi.
+•	Brainstorming: Brainstorming merupakan sebuah proses saat sebuah kelompok sedang berupaya untuk mencari solusi atas masalah tertentu. Tujuan brainstorming yaitu menghasilkan gagasan maupun ide-ide baru tanpa mengkritik pemikiran apapun.
