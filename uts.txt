@@ -1,69 +1,40 @@
-1.
-SALURAN MASUKAN-KELUARAN
-Saluran masukan (input) utama pada manusia terletak pada panca indera. Dari saluran ini 
-manusia bisa menerima informasi dari komputer.
-Saluran input pada manusia, antara lain :
-1. Mata
-Berfungsi untuk melihat benda, ukuran, warna, bentuk, kepadatan dan tekstur
-2. Telinga 
-Berfungsi sebagai input pendengaran, untuk mendengarkan nada, warna nada, pola titik 
-nada, intensitas dan frekuensi
-3. Hidung
-Berfungsi untuk membedakan bau yang ada di sekeliling
-4. Lidah
-Sebagai indera perasa, untuk membedakan rasa manis, asam, asin dan pahit
-5. Kulit
-berfungsi untuk merasakan tekanan dan suhu.
-Adapun semua informasi yang didapat akan diproses, diolah di dalam memori hingga menghasilkan suatu keluaran (output) yang sesuai dengan informasi yang diterima.
-Saluran output pada manusia, antara lain :
-1. Jari-jari dan tangan
-2. Mata
-3. Suara
+9.	Langkah-langkah pencetakan file pada word:
+•	GOMS
+Goal: mencetak dokumen word
 
-Dalam merancang antarmuka, faktor manusia atau panca indra memainkan peran kunci. Ini melibatkan:
-PENGLIHATAN
-Desain harus memperhitungkan kemampuan pengguna untuk melihat dengan jelas, termasuk kontras warna, ukuran teks, dan tata letak yang memfasilitasi persepsi visual.
-PENDENGARAN
-Faktor suara, seperti umpan balik audio atau petunjuk vokal, dapat meningkatkan aksesibilitas dan pengalaman pengguna.
-SENTUHAN
-Antarmuka harus dirancang untuk responsif terhadap sentuhan, memastikan kontrol dan interaksi yang nyaman pada perangkat layar sentuh.
-INGATAN
-dalam hal ini juga memainkan peran penting dalam merancang antarmuka.Beberapa aspek yang perlu dipertimbangkan adalah memori jangka pendek, memori jangka panjang dan kemampuan pengenalan pola.
+Method:
+-	Operator 1: Double-click pada file dokumen atau buka Word, lalu pilih dokumen dari daftar terbaru.
+-	Operator 2: Klik "File" di sudut kiri atas jendela Word dan pilih opsi "Cetak".
+-	Operator 3: Pilih printer dari daftar yang tersedia. Dan Tentukan jumlah salinan, halaman yang akan dicetak, orientasi, ukuran kertas, dll.
+-	Operator 4: Klik tombol "Cetak" untuk memulai proses pencetakan.
 
-2. 
-IMK adalah suatu disiplin ilmu 
-yang mengkaji komunikasi atau interaksi diantara pengguna dengan sistem komputer maupun sistem yang banyak digunakan dalam kehidupan sehari-hari, misalnya kendaraan, peralatan rumah tangga dan sebagainya.
-Latar belakang IMK melibatkan perkembangan teknologi komputer dan pertumbuhan kebutuhan pengguna. Dalam sejarahnya, perkembangan antarmuka pengguna (UI) dan antarmuka pengguna manusia (HMI) telah berkembang dari antarmuka teks ke antarmuka grafis, hingga interaksi berbasis sentuhan dan suara.
-faktor faktor diantaranya antara lain :
-a. faktor rekayasa perangkat lunak 
-b. faktor kecerdasan buatan 
-c. faktor linguistik komputasional
-d. faktor psikologi
-e. faktor multimedia 
-f. faktor antropologi 
-g. faktor ergonomik
-h. faktor penulisan 
-i. faktor matematika 
-j. faktor bisnis
-k. faktor sosiologi 
+Selection: Metode ini dipilih jika pengguna ingin mencetak dokumen dengan cepat dan mudah.
 
-3.
-Piranti Input:
-Keyboard: Piranti input yang paling umum, terdiri dari sejumlah tombol huruf, angka, dan karakter khusus untuk memasukkan data teks.
-Mouse: Menggunakan pergerakan dan tombol-tombolnya, mouse digunakan untuk mengontrol kursor pada layar komputer.
-Touchpad: Biasanya ditemukan pada laptop, touchpad memungkinkan pengguna menggerakkan kursor dengan gerakan jari.
-Piranti Petunjuk:
-Monitor: Piranti utama untuk menampilkan informasi kepada pengguna dalam bentuk visual.
-Speaker: Piranti audio untuk mengeluarkan suara dan memberikan umpan balik auditif.
-Tombol dan Lampu Indikator: Tombol-tombol dan lampu indikator memberikan petunjuk terkait status dan aksi yang dapat dilakukan.
-Piranti Pengambilan Data Terformat:
-Barcode Scanner: Menggunakan sinar untuk membaca dan menginterpretasi informasi yang terdapat dalam barcode.
-Optical Character Recognition (OCR): Mengkonversi teks yang tercetak ke dalam format digital yang dapat diolah.
-Piranti Pengambilan Data Tidak Terformat:
-Mikrofon: Mengubah suara menjadi sinyal listrik untuk merekam atau memproses suara.
-Kamera: Mengambil gambar atau merekam video untuk diolah atau ditransmisikan.
-Sensor Gerak: Mendeteksi perubahan posisi atau gerakan, sering digunakan dalam perangkat seluler atau permainan video.
+•	Backus-Naur Form (BNF)
+<print> ::= <open> <select_print> <print_dialog>
+<open> ::= "Buka atau buat dokumen Microsoft Word. Klik ikon aplikasi berwarna biru dengan gambar dokumen berwarna putih dan huruf 'W' tebal, kemudian pilih 'File' pada bilah menu di pojok kiri atas layar. Klik 'Open...' untuk membuka dokumen yang sudah ada atau 'New...' untuk membuat dokumen baru."[^1^][1]
+<select_print> ::= "Klik 'File'. Opsi ini berada pada bilah menu di pojok kiri atas layar, atau tab di sisi kiri atas jendela."[^1^][1]
+<print_dialog> ::= "Klik 'Print...'. Kotak dialog 'Print' akan dibuka setelahnya. Pilih opsi pencetakan. Gunakan pilihan-pilihan yang tersedia di kotak dialog untuk memilih: Mesin pencetak yang akan digunakan (mesin utama ditampilkan secara bawaan). Klik nama mesin untuk memilih mesin lain dari menu drop-down. Jumlah salinan yang harus dicetak. Secara bawaan, jumlah yang terpilih adalah '1'. Perbanyak jumlah untuk mencetak lebih banyak salinan."[^1^][1]
 
-•	Persona: Persona merupakan suatu karakteristik yang diamati oleh orang lain atau disebut juga dengan prototypical user. Persona membantu memanusiakan pengguna dan mengenal mereka pada tingkat yang lebih pribadi.
-•	Brainstorming: Brainstorming merupakan sebuah proses saat sebuah kelompok sedang berupaya untuk mencari solusi atas masalah tertentu. Tujuan brainstorming yaitu menghasilkan gagasan maupun ide-ide baru tanpa mengkritik pemikiran apapun.
-Jadi perbedaan antara persona dengan brainstorming adalah persona merupakan alat untuk memahami dan mewakili pengguna target, sedangkan untuk brainstorming merupakan metode untuk menghasilkan ide dan solusi baru dalam suatu kelompok.
+Notasi BNF:
+•	: : = berarti “didefinisikan sebagai”
+•	| berarti “atau”
+•	Teks dalam tanda kutip adalah instruksi literal yang harus dilakukan.
+
+•	Task-Action Grammar (TAG)
+TASK: Mencetak dokumen
+  ACTION: Buka aplikasi Microsoft Word
+    TASK: Membuka dokumen
+      ACTION: Klik 'File' pada bilah menu
+      ACTION: Klik 'Open...' untuk membuka dokumen yang sudah ada
+    TASK: Mencetak dokumen
+      ACTION: Klik 'File' pada bilah menu
+      ACTION: Klik 'Print...'
+        TASK: Mengatur opsi pencetakan
+          ACTION: Pilih mesin pencetak dari menu drop-down
+          ACTION: Tentukan jumlah salinan yang ingin dicetak
+          ACTION: Klik 'Print'
+
+Notasi TAG:
+•	TASK adalah tujuan yang ingin dicapai.
+•	ACTION adalah tindakan yang perlu dilakukan untuk mencapai tujuan tersebut.
