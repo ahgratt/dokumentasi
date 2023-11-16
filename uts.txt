@@ -28,4 +28,4 @@ Faktor suara, seperti umpan balik audio atau petunjuk vokal, dapat meningkatkan 
 SENTUHAN
 Antarmuka harus dirancang untuk responsif terhadap sentuhan, memastikan kontrol dan interaksi yang nyaman pada perangkat layar sentuh.
 INGATAN
-dalam hal ini sebuah antar 
+dalam hal ini juga memainkan peran penting dalam merancang antarmuka.Beberapa aspek yang perlu dipertimbangkan adalah memori jangka pendek, memori jangka panjang dan kemampuan pengenalan pola.
