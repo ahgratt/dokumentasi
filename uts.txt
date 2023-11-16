@@ -26,5 +26,6 @@ Desain harus memperhitungkan kemampuan pengguna untuk melihat dengan jelas, term
 PENDENGARAN
 Faktor suara, seperti umpan balik audio atau petunjuk vokal, dapat meningkatkan aksesibilitas dan pengalaman pengguna.
 SENTUHAN
-
-
+Antarmuka harus dirancang untuk responsif terhadap sentuhan, memastikan kontrol dan interaksi yang nyaman pada perangkat layar sentuh.
+INGATAN
+dalam hal ini sebuah antar 
