@@ -14,11 +14,12 @@ Berfungsi untuk membedakan bau yang ada di sekeliling
 Sebagai indera perasa, untuk membedakan rasa manis, asam, asin dan pahit
 5. Kulit
 berfungsi untuk merasakan tekanan dan suhu.
-
 Adapun semua informasi yang didapat akan diproses, diolah di dalam memori hingga menghasilkan suatu keluaran (output) yang sesuai dengan informasi yang diterima.
 Saluran output pada manusia, antara lain :
 1. Jari-jari dan tangan
 2. Mata
 3. Suara
 
+Dalam merancang antarmuka, faktor manusia atau panca indra memainkan peran kunci. Ini melibatkan:
 PENGLIHATAN
+
