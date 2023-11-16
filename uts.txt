@@ -66,3 +66,4 @@ Sensor Gerak: Mendeteksi perubahan posisi atau gerakan, sering digunakan dalam p
 
 •	Persona: Persona merupakan suatu karakteristik yang diamati oleh orang lain atau disebut juga dengan prototypical user. Persona membantu memanusiakan pengguna dan mengenal mereka pada tingkat yang lebih pribadi.
 •	Brainstorming: Brainstorming merupakan sebuah proses saat sebuah kelompok sedang berupaya untuk mencari solusi atas masalah tertentu. Tujuan brainstorming yaitu menghasilkan gagasan maupun ide-ide baru tanpa mengkritik pemikiran apapun.
+Jadi perbedaan antara persona dengan brainstorming adalah persona merupakan alat untuk memahami dan mewakili pengguna target, sedangkan untuk brainstorming merupakan metode untuk menghasilkan ide dan solusi baru dalam suatu kelompok.
