@@ -60,6 +60,8 @@ contoh function menghitung umur :
         RETURN x;
     END;
 contoh pemanggilan function menghitung umur :
+SELECT nama, tanggal_lahir, umur(tanggal_lahir, now()) as usia from databaseName;
+
     DELIMITER $$
     CREATE FUNCTION huruf (nilai INT) RETURNS VARCHAR(5)
     BEGIN
@@ -79,7 +81,7 @@ contoh pemanggilan function menghitung umur :
     	RETURN x;
     END
 
-    SELECT nama, tanggal_lahir, umur(tanggal_lahir, now()) as usia from databaseName;
+   
 pastikan database tersebut sudah ada tabel tanggal lahir yang memuat data tentang tanggal lahir.
 contoh function menghitung nilai huruf:
 DELIMITER $$
@@ -141,3 +143,50 @@ contoh pembuatan procedur edit pada sql :
 	END $$
 cara pemanggilan procedur edit pada sql
 	call data_edit(1,'alamat','pontianak');
+
+membuat trigger yang dapat mencatat histori perubahan pada database
+contoh membuat trigger edit :
+DELIMITER $$
+CREATE TRIGGER trigger_after_edit
+BEFORE UPDATE
+    ON data FOR EACH ROW
+BEGIN
+    DECLARE vUser varchar(255);
+    SELECT USER() INTO vUser;
+    INSERT INTO
+    	data_history
+    SET
+		nama_lama = OLD.nama,
+        nama_baru = NEW.nama,
+		alamat_lama = OLD.alamat,
+        alamat_baru = NEW.alamat,
+        tanggal_berubah = NOW(),
+        status = 'after edit',
+        user = vUser;
+END
+membuat fungsi capitalize pada mysql
+DELIMITER $$
+CREATE FUNCTION capitalize(s varchar(255))RETURNS varchar(255)
+BEGIN
+declare c int;
+declare x varchar(50);
+declare y varchar(50);
+declare z varchar(50);
+ set x = UPPER(SUBSTRING(s ,1 ,1));
+set y = lower(SUBSTR(s, 2));
+set c = instr( y, ' ');
+
+while c > 0
+do
+set z = substr(y, 1, c);
+set x = concat(x, z);
+set z = upper(substr(y, c+1, 1));
+set x = concat(x,z);
+set y = substr(y, c+2);
+set c = instr(y, '');
+
+end while;
+set x = concat(x, y);
+return x;
+END$$
+DELIMITER ;
