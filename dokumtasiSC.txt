@@ -178,3 +178,23 @@ serangan terhadap typografi
   b. acoustic eavesdropping
 2. serangan aktif
 
+kategori algoritma (chipher) 
+-chipher aliran 
+  mengenkripsi plainteks menjadi cipherteks bit per bit atau byte per byte dengan kunci keystrim. 
+  olgoritma ini diperkenalkan oleh vernam cipher yang diadopsi dari one-time pad cipher.
+  bit bit kunci untuk enkripsi dan deskripsi disebut keystream.
+  keystream dibangkitkan oleh keystream generator.
+  keamanan sistem cipher aliran bergantung pada keystream generator.
+  3 kasus yang dihasilkan oleh keystream generator :
+  1. keystream seluruhnya 0
+      maka chiperteks = plainteks karena ci = pi xor 0 = p, dan prosesnya terus berulang.
+  2. keystrean berukang secara periodik
+      maka algoritma enkrispsi = algoritma enkripsi dengan XOR sederhana yang memiliki tingkat keamanan yang tidak berarti.
+  3. keystream benar-benar acak 
+      panjang keystream = panjang plainteks, dan kita mendaoatkan cipher aliran sebagai unbreakable cipher.
+  tingkat keamana cipher aliran terletak antara algoritma xor sederhana dengan one-time pad.
+  semakin acak keluaran yang dihasilkan pembangkit-bit- aliran, semakin sulit dipecahkan oleh kripanalis.
+  keystream generator dapat membangkitkan keystream berbasis bit bit atau dalam bentuk blok blok bit.
+  prosedur menerima masukan sebuah kunci u. 
+  pengirim dan penerima harus memiliki kunci u.
+
