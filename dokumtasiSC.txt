@@ -198,3 +198,30 @@ kategori algoritma (chipher)
   prosedur menerima masukan sebuah kunci u. 
   pengirim dan penerima harus memiliki kunci u.
 
+wireless
+mengapa harus digunakan:
+  karena sudah banyak digunakan. Bahkan jumlah perangkat telepon wiriless sudah mengalahkan jumlah fixed.
+  kemudahan wireless:
+    kenyamanan: bergerak (mobile) & always connected, rooming.
+    lebih murah dan cepat
+wireless technology:
+celluler-based wireless data solutions.
+wireless LAN (WLAN) salutions.
+contoh kasus:
+  cloning handphone AMPS untuk curi pulsa
+  Airsonot untuk menyadap paket WLAN
+  NIST di amerika melarang penggunaan WLAN untuk sistem yang memiliki data data confidential.
+masalah keamanan wireless:
+  pencurian fisik.
+  pwnyadapan, man-in-the-midle attack, passive attack.
+  resources perangkat wireless yang terbatas.
+  pengguna tidak dapat membuat sistem sendiri, bergantung pada vendor.
+  Dos, active attack, injection of new (fake) traffic.
+pengamanan wireless:
+  segmentasi jaringan.
+  pembatasan akses berdasarkan MAC address.
+  encryption:WEP.
+  penggunanaan end-to-end encryption pada level aplikasi.
+
+
+
